@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+
+file="$1"
+[[ -z "$file" || ! -f "$file" ]] && { echo "Usage: $0 <markdown-file>"; exit 1; }
+
+slides=()
+mapfile -t slides < <(awk '
+  /^```/ { in_code = !in_code; next }
+  !in_code && /^# / { print NR }
+' "$file")
+slides+=( $(wc -l < "$file") )
+
+index=0
+total=$((${#slides[@]} - 1))
+
+while true; do
+  clear
+  start=${slides[$index]}
+  end=${slides[$((index+1))]}
+  sed -n "${start},$((end - 1))p" "$file" | bat --language=markdown --plain --paging=never
+
+  read -rsn1 input
+  case $input in
+    n) ((index < total - 1)) && ((index++)) ;;
+    p) ((index > 0)) && ((index--)) ;;
+    q) break ;;
+  esac
+done
