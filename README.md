@@ -1,4 +1,4 @@
-# Slide Hustle
+# Slide Hustle 📟
 
 Minimalist terminal markdown slide decks
 
