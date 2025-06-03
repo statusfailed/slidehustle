@@ -4,11 +4,12 @@ Minimalist terminal markdown slide decks
 
 # What is this?
 
-**Slide Hustle** is a single-file shell script that presents a Markdown file as a slide deck, right in your terminal.
+**Slide Hustle** is a single-file shell script that presents a Markdown file as a slide deck,
+right in your terminal.
 
 - One `# Header` per slide
 - No GUI, no browser, no dependencies except [`bat`](https://github.com/sharkdp/bat)
-- Perfect for lightning talks, live coding demos, and [asciinema](https://asciinema.org/) casts.
+- Great for lightning talks, live coding demos, and [asciinema](https://asciinema.org/) casts.
 
 Example:
 
