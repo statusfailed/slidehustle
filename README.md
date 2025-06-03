@@ -15,6 +15,8 @@ Example:
 
     ./slideh README.md
 
+![slide hustle README example cast](./propaganda/slideh-readme-cast.svg)
+
 # Usage
 
 ```bash
@@ -34,7 +36,7 @@ Each top-level `#` starts a new slide.
 Install [`bat`](https://github.com/sharkdp/bat), then run slideh:
 
 ```bash
-curl -o slideh https://raw.githubusercontent.com/statusfailed/slide-hustle/main/slideh
+curl -o slideh https://raw.githubusercontent.com/statusfailed/slidehustle/refs/heads/master/slideh
 chmod +x slideh
 ./slideh README.md
 ```
