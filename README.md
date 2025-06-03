@@ -15,7 +15,7 @@ Example:
 
     ./slideh README.md
 
-![slide hustle README example cast](./propaganda/slideh-readme-cast.svg)
+![slide hustle README example cast](./propaganda/readme.svg)
 
 # Usage
 
